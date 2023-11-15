@@ -1,11 +1,13 @@
 import "./Navbar.css";
-import navLogo from "../assets/logo.png";
+import navLogo from "../../assets/logo.png";
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar_logo">
         <img src={navLogo} alt="" width={"50%"} />
       </div>
+      {/* <hr />
+      <hr /> */}
       <div className="navbar_links">
         <a href="">Home</a>
         <a href="">Discourses</a>

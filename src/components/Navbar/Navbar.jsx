@@ -1,20 +1,21 @@
 import "./Navbar.css";
 import navLogo from "../../assets/logo.png";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar_logo">
         <img src={navLogo} alt="" width={"50%"} />
       </div>
-      {/* <hr />
-      <hr /> */}
+      <hr />
+      <hr />
       <div className="navbar_links">
-        <a href="">Home</a>
-        <a href="">Discourses</a>
-        <a href="">Adventure</a>
-        <a href="">Activity</a>
-        <a href="">Login</a>
-        <a href="">Scholarships</a>
+        <NavLink to={"/"}>Home</NavLink>
+        <NavLink to={"/discourses"}>Discourses</NavLink>
+        <NavLink to={"/adventure"}>Adventure</NavLink>
+        <NavLink to={"/activity"}>Activity</NavLink>
+        <NavLink to={"/login"}>Login</NavLink>
+        <NavLink to={"/scholarships"}>Scholarships</NavLink>
       </div>
     </nav>
   );

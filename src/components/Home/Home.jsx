@@ -2,6 +2,7 @@ import { Button } from "@mui/material";
 import "./Home.css";
 import homeImage from "../../assets/Divine-mother-22.08.2023-OK.jpg";
 import homeCarouselImage from "../../assets/BHAJAGOVINDAM-OK.png";
+import Carousel from "react-material-ui-carousel";
 const Home = () => {
   return (
     <div className="home">
@@ -14,7 +15,12 @@ const Home = () => {
         </Button>
       </div>
       <div className="home_grid">
-        <img src={homeImage} alt="" width={"100%"} />
+        <div className="home_grid_carousel">
+          <Carousel interval={3000}>
+            <img src={homeImage} alt="" width={"100%"} />
+            <img src={homeCarouselImage} alt="" width={"100%"} />
+          </Carousel>
+        </div>
         <div>
           <h2>
             Upcoming Discourse: <br />

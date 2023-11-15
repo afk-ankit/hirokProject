@@ -2,6 +2,7 @@
 .home_image{
     background-size: 100% 100%;
     height: 480px;
+    background: linear-gradient(to top, rgb(255, 255, 255) 10%,rgba(255,255,255,0) 50%),url('src/assets/login1.jpg');
     background: url('src/assets/login.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,9 +45,10 @@
     gap: 1rem;
     overflow: hidden;
 }
-.home_grid>img:nth-child(1){
+.home_grid_carousel{
     grid-column: 2/span 1;
     object-fit: contain;
+    z-index: 0;
 }
 .home_carousel_image{
     border: 5px solid steelblue;

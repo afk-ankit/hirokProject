@@ -9,9 +9,9 @@ const Discourse = () => {
     <div className="discourse">
       <h1>Discourses</h1>
       <div>
-        <DiscourseCard img={img1} />
-        <DiscourseCard img={img2} />
-        <DiscourseCard img={img3} />
+        <DiscourseCard img={img1} id={1} />
+        <DiscourseCard img={img2} id={2} />
+        <DiscourseCard img={img3} id={3} />
       </div>
     </div>
   );

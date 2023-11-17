@@ -1,13 +1,16 @@
 import { Button } from "@mui/material";
 import "./DiscourseCard.css";
 import PropTypes from "prop-types";
-const DiscourseCard = ({ img }) => {
+import { Link } from "react-router-dom";
+const DiscourseCard = ({ img, id }) => {
   return (
     <div className="discourse_card_container">
       <div className="discourse_card">
         <img src={img} alt="course image" />
         <div>
-          <h1>Course Name</h1>
+          <Link to={`/discourses/${id}`}>
+            <h1>Course Name</h1>
+          </Link>
           <p>
             Course Description Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Eveniet hic reprehenderit a perspiciatis porro
@@ -25,5 +28,6 @@ const DiscourseCard = ({ img }) => {
 };
 DiscourseCard.propTypes = {
   img: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 export default DiscourseCard;

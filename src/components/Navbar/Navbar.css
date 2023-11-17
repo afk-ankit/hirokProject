@@ -3,22 +3,30 @@
     top: 0;
     background-color: white;
     z-index: 1;
-    margin-bottom: 0.5rem;
+    position: relative;
 }
 .navbar_logo{
     color: red;
     background-color: lemonchiffon;
-    height: 7rem;
+    height: 4rem;
     display: grid;
     place-items: center;
 }
-.navbar_logo>img{
-    width: 500px;
-    height: 80%;
+.navbar_logo>img:nth-child(1){
+    width: 300px;
     object-fit: contain;
 }
+.navbar_logo>a{
+    width: 50px;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    cursor: pointer;
+}
+.navbar_logo>a>img{
+    width: 100%;
+}
 .navbar_links{
-    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     width: 100%;
     background-color: #384A74;
